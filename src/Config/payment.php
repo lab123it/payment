@@ -9,6 +9,12 @@ return [
     'key' => env('PAYMENT_KEY', ''),
 		
     'encryptKey' => env('PAYMENT_ENC_KEY', ''),
+		
+	'keys' => [
+		'iugu' => [
+			'api_key' => env('IUGU_API_KEY', '')
+		]
+	],
     
     'events' => [
         'status_change' => [
